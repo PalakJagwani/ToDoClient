@@ -21,8 +21,7 @@ function Todo({data}) {
 
 
     const setDone = () => {
-        const [updatedchecked, setUpdatedCheked] = useState(false);
-        setUpdatedCheked((prev)=> !prev)
+        updatedchecked = !checked;
         setChecked(updatedchecked)
         dispatch(isTodoCompleted({id : data._id, completed : updatedchecked}))
     }
