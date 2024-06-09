@@ -17,7 +17,7 @@ function Todo({data}) {
     }
 
     useEffect(() => {
-    }, [Todos])
+    }, [Todos, checked])
 
 
     const setDone = () => {
