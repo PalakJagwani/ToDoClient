@@ -40,9 +40,9 @@ function Todo({data}) {
                     <input type="checkbox" className=" ml-2" checked = {checked} onChange={() => {setDone()}}/>
                     <input type="text" defaultValue={data.todoData} className={`py-2 pl-2 text-left focus:outline-none md:w-96 bg-gray-800 text-gray-200 ${checked ? 'opacity-60 line-through' : ''}`} readOnly = {!update} onChange = {(e) => {setUpdatedData(e.target.value)}} />
                     <span className=' float-right pr-3 cursor-pointer' onClick={() => {deleteTheTodo()}}><i className='fas fa-trash mt-3'/></span>
-                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? 'hidden' : '' }`} onClick={() => {setUpdate(true)}}><i className="fa-solid fa-pen-to-square"></i></span>
-                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? '' : 'hidden' }`} onClick={() => {updateTheTodo()}}><i className="fa-solid fa-check"></i></span>
-                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? '' : 'hidden'}`} onClick={() => setUpdate(false)}><i className="fa-solid fa-xmark "></i></span>
+                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? 'hidden' : '' }`} onClick={() => {setUpdate(true)}}><i className="fa-solid fa-pen-to-square mt-3"></i></span>
+                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? '' : 'hidden' }`} onClick={() => {updateTheTodo()}}><i className="fa-solid fa-check mt-3"></i></span>
+                    <span className={` float-right pr-3 cursor-pointer ${checked ? 'hidden' : ''} ${update ? '' : 'hidden'}`} onClick={() => setUpdate(false)}><i className="fa-solid fa-xmark mt-3"></i></span>
                     </div>
                 </form>
             </div>
