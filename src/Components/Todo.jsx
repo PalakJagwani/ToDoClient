@@ -36,7 +36,7 @@ function Todo({data}) {
         <div className=" grid place-content-center">
             <div>
                 <form action="">
-                    <div className= {`bg-gray-800 text-gray-200 rounded-md my-2 md:w-[40rem] w-[18rem]`}>
+                    <div className= {`bg-gray-800 text-gray-200 rounded-md my-2 md:w-[40rem] w-[95vw]`}>
                     <input type="checkbox" className=" ml-2" checked = {checked} onChange={() => {setDone()}}/>
                     <input type="text" defaultValue={data.todoData} className={`py-2 pl-2 text-left focus:outline-none md:w-96 bg-gray-800 text-gray-200 ${checked ? 'opacity-60 line-through' : ''}`} readOnly = {!update} onChange = {(e) => {setUpdatedData(e.target.value)}} />
                     <span className=' float-right pr-3 cursor-pointer' onClick={() => {deleteTheTodo()}}><i className='fas fa-trash mt-3'/></span>
