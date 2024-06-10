@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { logout } from "../store.js/slice/authSlice"
 import {useDispatch, useSelector} from 'react-redux'
-import {isUserAuthenticated} from '../store.js/slice/authSlice'
+import {isUserAuthenticated, isLoading} from '../store.js/slice/authSlice'
 
 function Logout(){
     const navigate = useNavigate()

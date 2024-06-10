@@ -2,7 +2,7 @@ import {useForm} from 'react-hook-form'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { loginUser, Error } from '../store.js/slice/authSlice'
 import {useSelector, useDispatch} from 'react-redux'
-import { isUserAuthenticated } from '../store.js/slice/authSlice'
+import { isUserAuthenticated , isLoading} from '../store.js/slice/authSlice'
 import { useEffect } from 'react'
 
 function Login(){
