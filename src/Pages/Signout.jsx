@@ -24,7 +24,7 @@ function Signout(){
     }
     return(
         <div className=" grid place-content-center h-screen">
-            <div className = "text-center text-red-500 my-10 text-2xl">{loading ? "Loading" : ""}</div>
+            {loading ? <div className = "text-center text-red-500 my-10 text-2xl">loading</div> : ""}
             <div className=" bg-gray-900 text-gray-300 px-20 py-8 mb-80">
                 <span className=" text-xl font-medium block text-center pb-6 ">Do you wish to signout?</span>
                 <div className=" flex justify-evenly">

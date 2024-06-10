@@ -33,7 +33,7 @@ function Login(){
     return(
         
         <div className=' grid place-content-center my-48'>
-            <div className = "text-center text-red-500 my-10 text-2xl">{loading ? "Loading" : ""}</div>
+            {loading ? <div className = "text-center text-red-500 my-10 text-2xl">loading</div> : ""}
             <form onSubmit={handleSubmit(mySubmit)} className=' bg-gray-900 shadow-xl shadow-gray-800 md:pt-7 pt-4 px-6'>
                 <div className=' text-3xl font-bold text-center pb-2 text-gray-400'>Login</div>
                 <label htmlFor="username" className=' block py-2 text-xl text-gray-200'>Username : </label>
