@@ -71,7 +71,7 @@ export const deleteAllTodos = createAsyncThunk(
 const todoSlice = createSlice({
     name : 'todos',
     initialState : {
-        todos : [],
+        todos : [{}],
         isLoading : false,
         isError : false
     },
